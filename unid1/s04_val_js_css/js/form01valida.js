@@ -1,6 +1,6 @@
 function fnValidar01()
 {
-     var xtexto=document.getElementById("txtTexto").value;
+     var ximagen=document.getElementById("fileImagen").value;
      if(xtexto == ""||/.../.test(xtexto))
 
     {

@@ -1,6 +1,6 @@
 function pasarTexto()
 {
-    var xValor = document.getElementById("Texto1").Value;
+    var xValor = document.getElementById("Texto1").value;
     document.getElementById("texto2").value=xValor;
 
 }

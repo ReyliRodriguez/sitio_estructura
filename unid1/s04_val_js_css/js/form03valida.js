@@ -1,25 +1,26 @@
 function fnValidar03()
 {	
-    var elementoPrefer = document.getElementById("lstpreferencias").value;
-    for(var i=0; i <elementoPrefer.lenght;i++)
+    var elementoPref = document.getElementsByName("chkPrefer");
+    for(var i=0; i <elementoPref.length; i++)
    {
-       if(!elementoPrefer[i].checked)
+       if(!elementoPref[i].checked)
        {
-    alert("element sin check"+ elementoPrefer[i].value);
+    alert("elemento sin check"+ elementoPref[i].value);
     return false;
    }
 }
-var elementEstado=document.getElementById("radEstado");
+var elementEstado=document.getElementsByName("radEstado");
 var selecionado=false;
 var valorSeleccionado="";
-for(var i=0; i<elementEstado.lenght;i++)
+for(var i=0; i<elementEstado.length;i++)
 {
     if(elementEstado[i].checked)
     {
         valorSeleccionado=elementEstado[i].value;
+        selecionado=true;
     }
 }
-if(!selecionado){
+    if(!selecionado){
     alert("elija estado civil");
     return false;
 }

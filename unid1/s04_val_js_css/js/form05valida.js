@@ -8,7 +8,7 @@ function fnValidar05()
 
     }
     var xnumero=document.getElementById("txtnumero").value;
-    if(!(/^\d{9}$/.test(xtexto)))
+    if(!(/^\d{9}$/.test(xnumero)))
     {
         alert("FALTA NUMEROS...")
         return false;

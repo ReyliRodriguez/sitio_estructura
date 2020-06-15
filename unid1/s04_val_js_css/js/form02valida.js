@@ -1,8 +1,8 @@
 function fnValidar02()
 {
     
-        var xvalor=document.getElementById("lstpreferencias").value;
-        if(xvalor =="")
+        var xValor=document.getElementById("listPreferencias").value;
+        if(xValor =="")
    
        {
         alert("selecione una preferencia ...");
